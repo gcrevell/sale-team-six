@@ -1,18 +1,16 @@
 using namespace std;
 
-class SetOperations {
-	public:
-		static boolean subset(Set set1, Set set2);
-		static Set complement(Set universe, Set subset);
-}
+#include "SetOperations.h";
 
-boolean SetOperations::subset(Set set1, Set set2) {
+template <class E>
+boolean SetOperations::subset(Set<E> set1, Set<E> set2) {
 
 	return (SetOperations::difference(set1, set2).size() == 0);
 
 }
 
-Set SetOperations::complement(Set universe, Set subset) {
+template <class E>
+Set<E> SetOperations::complement(Set<E> universe, Set<E> subset) {
 
 	return SetOperations::difference(universe, subset);
 

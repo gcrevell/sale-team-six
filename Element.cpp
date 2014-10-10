@@ -1,12 +1,6 @@
 using namespace std;
 
-template <class elementType>
-class Element {
-	elementType object;
-	public:
-		Object getElement();
-		void setElement(elementType newObject);
-}
+#include "Element.h";
 
 template <class elementType>
 elementType Element::getElement() {
