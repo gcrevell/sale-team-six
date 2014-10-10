@@ -9,6 +9,12 @@
 
 #include "Element.h"
 
+/*
+ * Contributors: Gabriel Revells
+ *
+ * A class to track a set, stored
+ * as a linked list
+ */
 template <class E>
 class Set{
 private:
